@@ -11,8 +11,15 @@
 @implementation SyntaxBasics
 
 - (void)instanceMethod
+
 {
     NSLog(@"You called an instance method on %@!", self);
+    
+}
+
+- (void)instanceMethodWithString:(NSString *)aString
+{
+    NSLog(@"You called an instance method with \"%@\" on %@!", aString, self);
 }
 
 @end
