@@ -23,4 +23,10 @@
     NSLog(@"You called an instance method with \"%@\" on %@!", aString, self);
 }
 
+- (void)instanceMethodWithString:(NSString *)aString andNumber:(NSNumber *)aNumber;
+
+{
+    NSLog(@"You called an instance method with \"%@\" and %@! on %@!", aString, aNumber, self);
+}
+
 @end
