@@ -7,11 +7,16 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "SyntaxBasics.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        // insert code here...
-        NSLog(@"Hello, World!");
+        
+        SyntaxBasics *object = [[SyntaxBasics alloc] init];
+        
+        [object instanceMethod];
+        [object instanceMethodWithString:@"Hello!"];
+
     }
     return 0;
 }
